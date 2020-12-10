@@ -1,0 +1,76 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <h2 class="title">Add Book</h2>
+            <hr>
+            <form name="form" (ngSubmit)="f.form.valid && onSubmit(f)" #f="ngForm" novalidate>
+                <div class="form-group">
+                    <label for="title">Title :</label>
+                    <input type="text" class="form-control" [(ngModel)]="temp.title" #title="ngModel"
+                        [ngClass]="{'is-invalid':f.submitted && title.invalid}" name="title" required />
+                    <div *ngIf="f.submitted && title.invalid" class="invalid-feedback">
+                        <div *ngIf="email.errors.required">Please Fill the Field</div>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="author">Author Name :</label>
+                    <input type="text" class="form-control" [(ngModel)]="temp.author" #author="ngModel"
+                        [ngClass]="{'is-invalid':f.submitted && author.invalid}" name="author" required />
+                    <div *ngIf="f.submitted && author.invalid" class="invalid-feedback">
+                        <div *ngIf="email.errors.required">Please Fill the Field</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject :</label>
+                    <input type="text" class="form-control" [(ngModel)]="temp.subject" #subject="ngModel"
+                        [ngClass]="{'is-invalid':f.submitted && subject.invalid}" name="subject" required />
+                    <div *ngIf="f.submitted && subject.invalid" class="invalid-feedback">
+                        <div *ngIf="email.errors.required">Please Fill the Field</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Book Description :</label>
+                    <input type="text" class="form-control" [(ngModel)]="temp.description" #description="ngModel"
+                        [ngClass]="{'is-invalid':f.submitted && description.invalid}" name="description" required />
+                    <div *ngIf="f.submitted && description.invalid" class="invalid-feedback">
+                        <div *ngIf="email.errors.required">Please Fill the Field</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="rackNumber">Rack Number :</label>
+                    <input type="text" class="form-control" [(ngModel)]="temp.rackNumber" #rackNumber="ngModel"
+                        [ngClass]="{'is-invalid':f.submitted && rackNumber.invalid}" name="rackNumber" required />
+                    <div *ngIf="f.submitted && rackNumber.invalid" class="invalid-feedback">
+                        <div *ngIf="email.errors.required">Please Fill the Field</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="numberOfCopy">Number Of Copy :</label>
+                    <input type="text" class="form-control" [(ngModel)]="temp.numberOfCopy" #numberOfCopy="ngModel"
+                        [ngClass]="{'is-invalid':f.submitted && numberOfCopy.invalid}" name="numberOfCopy" required />
+                    <div *ngIf="f.submitted && numberOfCopy.invalid" class="invalid-feedback">
+                        <div *ngIf="email.errors.required">Please Fill the Field</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button class="btn btn-primary button1">Add Book</button>
+                    &nbsp;
+                    &nbsp;
+                    <button type="reset" class="btn btn-primary button3">Reset</button>
+                    &nbsp;
+                    &nbsp;
+                    <a class="btn btn-primary button2" (click)="goBack()">Go Back</a>
+
+                </div>
+                <hr>
+            </form>
+        </div>
+    </div>
+</div>

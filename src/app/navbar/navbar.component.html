@@ -1,0 +1,30 @@
+<div class="Header">
+  <h1>National Public Library</h1>
+</div>
+
+
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark" style="background-color: #f59ff8;">
+  <a class="navbar-brand" href="#"><a class="navbar-brand" href="#">
+    </a></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link " [routerLinkActiveOptions]="{exact:true}" routerLinkActive="Active"
+          [routerLink]="homeLink">Home </a>
+      </li>
+      <li class='nav-item'> <a class='nav-link' [routerLink]="reglink">Registration</a></li>
+
+      <li class='nav-item'> <a class='nav-link' [routerLink]="memlogin">Login</a></li>
+
+
+    </ul>
+
+
+
+  </div>
+</nav>

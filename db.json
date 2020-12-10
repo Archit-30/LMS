@@ -1,0 +1,173 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "Shirpurkar",
+      "author": "piyu@gmail.com"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "RegisterUser": [
+    {
+      "fname": "Archit",
+      "username": "archit",
+      "lname": "Lokhande",
+      "email": "archit.lokhande@hcl.com",
+      "password": "archit@123",
+      "role": "user",
+      "id": 1
+    },
+    {
+      "fname": "piyush",
+      "username": "piyu",
+      "lname": "shirpurkar",
+      "email": "piyu@gmail.com",
+      "password": "piyu@123",
+      "role": "user",
+      "id": 2
+    },
+    {
+      "fname": "samir",
+      "username": "samir",
+      "lname": "khan",
+      "email": "sami@gmail.com",
+      "password": "samirsamir",
+      "role": "user",
+      "id": 3
+    },
+    {
+      "fname": "Abhishek",
+      "username": "abhi",
+      "lname": "Ganvir",
+      "email": "abhi@gmail.com",
+      "password": "abhiabhi",
+      "role": "librarian",
+      "id": 4
+    },
+    {
+      "fname": "smith",
+      "username": "smith",
+      "lname": "sam",
+      "email": "smith@gmail.com",
+      "password": "smithsmith",
+      "role": "user",
+      "id": 5
+    },
+    {
+      "fname": "Ankit",
+      "lname": "Sharma",
+      "username": "ankit",
+      "email": "ankit@gmail.com",
+      "password": "ankitankit",
+      "role": "librarian",
+      "id": 6
+    },
+    
+    {
+      "fname": "piyush",
+      "lname": "shirpurkar",
+      "username": "piyu",
+      "email": "piyu@gmail.com",
+      "password": "piyupiyu",
+      "role": "librarian",
+      "id": 7
+    }
+  ],
+  "Books": [
+    {
+      "title": "Thermal Engineering",
+      "author": "R K Bansal",
+      "subject": "Mechanical",
+      "description": "Thermal Engineering Concepts and Numericals",
+      "rackNumber": "5",
+      "numberOfCopy": "10",
+      "id": 1
+    },
+    {
+      "title": "Engineering Mechanics",
+      "author": "Khurmi Gupta",
+      "subject": "Mechanical",
+      "description": "Volume 1",
+      "rackNumber": "5",
+      "numberOfCopy": "10",
+      "id": 2
+    },
+    {
+      "title": "Green Signals",
+      "author": "Jairam Ramesh",
+      "subject": "Competitive",
+      "description": "Volume 1",
+      "rackNumber": "3",
+      "numberOfCopy": "10",
+      "id": 3
+    },
+    {
+      "title": "The Secret",
+      "author": "Rhonda Byrne",
+      "subject": "Motivational",
+      "description": "The Secret is a 2006 self-help book by Rhonda Byrne, based on the earlier film of the same name. It is based on the belief of the law of attraction, which claims that thoughts can change a person's life directly.",
+      "rackNumber": "3",
+      "numberOfCopy": "10",
+      "id": 4
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "subject": "Motivational",
+      "description": "This book cover is one of many given to Harper Lee's classic work To Kill a Mockingbird (1960). The novel won a Pulitzer Prize in 1961 and the next year was made into an Academy Award-winning film.",
+      "rackNumber": "8",
+      "numberOfCopy": "15",
+      "id": 5
+    },
+    {
+      "title": "Machine Design",
+      "author": "R K Bansal",
+      "subject": "Mechanical",
+      "description": "Volume1",
+      "rackNumber": "5",
+      "numberOfCopy": "10",
+      "id": 13
+    },
+    {
+      "title": "Fluid Mechnaics",
+      "author": "R K Bansal",
+      "subject": "Mechanical",
+      "description": "Volume2",
+      "rackNumber": "5",
+      "numberOfCopy": "10",
+      "id": 14
+    },
+    {
+      "title": "Production Engineering",
+      "author": "S. S. Nawale",
+      "subject": "Mechanical",
+      "description": "Volume1",
+      "rackNumber": "5",
+      "numberOfCopy": "10",
+      "id": 15
+    },
+    {
+      "title": "Electrical Circuits",
+      "author": "K. S. Sharma",
+      "subject": "Electrical",
+      "description": "Theory and Circuit Drawings",
+      "rackNumber": "7",
+      "numberOfCopy": "10",
+      "id": 16
+    }
+  ]
+}

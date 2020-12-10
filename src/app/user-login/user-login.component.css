@@ -1,0 +1,22 @@
+.container{
+   margin: auto;
+width: 100%;
+padding: 10px;
+
+/* background-color: rgb(255, 242, 230);
+   border: 3px solid darksalmon;
+ */
+}
+
+.col-4{
+   margin: auto;
+   width: 60%;
+   padding: 10px;
+   align-content: center;
+
+}
+
+.title{
+   text-align: center;
+   color: rgb(8, 37, 163);
+ }

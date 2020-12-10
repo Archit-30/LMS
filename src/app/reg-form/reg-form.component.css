@@ -1,0 +1,19 @@
+.container{
+    margin: auto;
+ width: 100%;
+ padding: 10px;
+
+ }
+
+ .col-4{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    align-content: center;
+
+ }
+
+ .title{
+    text-align: center;
+    color: rgb(8, 37, 163);
+  }

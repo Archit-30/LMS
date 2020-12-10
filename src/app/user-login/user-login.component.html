@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+
+            <form (ngSubmit)="onSubmit()" [formGroup]="userForm">
+
+                <h2 class="title">Library Login Page</h2>
+                <hr>
+                <div class="form-group">
+                    Username: <input formControlName="username" placeholder="Enter Your Username" class="form-control"
+                        value="">
+                    <div *ngIf="username.touched && username.invalid" class="alert alert-danger">
+                        <div *ngIf="username.invalid" [ngClass]="'error'"> Userame is
+                            required. </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    Password: <input formControlName="password" placeholder="Enter Your Password " class="form-control"
+                        type="password">
+                    <div *ngIf="password.touched && password.invalid" class="alert alert-danger">
+                        <div *ngIf="password.errors.required">Password is required.
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label>Role :</label>
+                    <select id="role" name="role" formControlName="role" class="form-control">
+                        <option value="" selected>Select Role</option>
+                        <option value="user">User</option>
+                        <option value="librarian">Librarian</option>
+                    </select>
+
+
+                </div>
+
+                <div class="form-group">
+                    <button class="btn btn-primary">Sign In</button>
+                    &nbsp;
+                    &nbsp;
+                    <a [routerLink]="reglink" class="btn btn-primary">Register</a>
+
+                </div>
+
+
+                <hr>
+            </form>
+        </div>
+    </div>
+</div>

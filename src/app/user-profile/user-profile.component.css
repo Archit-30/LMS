@@ -1,0 +1,141 @@
+div{
+    box-sizing: border-box;
+    font-family: Avenir;
+  }
+
+  .column {
+    float: right;
+    width: 33.2%;
+    padding: 20;
+    height: 300px; /* Should be removed. Only for demonstration */
+    background-color: antiquewhite;
+    border: aquamarine;
+    /* background: rgb(250, 252, 253); */
+    /* box-shadow: 0 0 5px 1px rgba(252, 252, 252, 0.47); */
+     text-align: center;
+    padding: 20px;
+    border:1px solid rgba(0,0,0,.125);
+    margin-top: 50px;
+    align-self: center;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* .row{
+    
+    width: 50%;
+    margin: 0!important;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .column{
+    width: 50%;
+    background: rgb(250, 252, 253);
+    /* box-shadow: 0 0 5px 1px rgba(252, 252, 252, 0.47); */
+    /* text-align: center;
+    padding: 20px;
+    border:1px solid rgba(0,0,0,.125);
+    margin-top: 50px;
+    align-self: center;
+  } */ 
+
+  /* .addBookCard{
+    height: 400px;
+    width: 35%;
+    background: rgb(250, 252, 253);
+    box-shadow: 0 0 5px 1px rgba(252, 252, 252, 0.47);
+    text-align: center;
+    padding: 20px;
+    border:1px solid rgba(0,0,0,.125);
+    margin-top: 50px;
+    align-self: center;
+  } */
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 350px; 
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  input{
+    border:none;
+    margin-left: 20px;
+    border-radius: 50px;
+    width: 100%;
+  }
+  input:focus{
+    outline: none!important;
+  }
+  input::placeholder{
+    font-family: Avenir;
+  }
+  .input-wrap{
+    display: inline-flex;
+    position: relative;
+    border-radius: 5px;
+    /* border: 1px solid #1426c5; */
+    padding: 5px 2px 3px 5px;
+    box-shadow: inset 0px 0px 2px 0px #094b96;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+ 
+  .s-img{
+    height: 50px;
+    width: 50px;
+  }
+  h2{
+    color:#1b24a8;
+    font-weight: 300;
+    text-shadow: 0 1px 2px #4650e2;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .row{
+      width: 50%;
+      margin-top: 0;
+    }
+    .input-wrap{
+      width: 100%;
+    }
+  }
+.userNavbar{
+    text-align: center;
+    font-size: larger;
+    background-color: rgb(201, 201, 238);
+}
+
+
+    .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 24px;
+        margin: 4px 2px;
+        cursor: pointer;
+        align-self: center;
+      }
+
+      table.center {
+        margin-left: auto; 
+        margin-right: auto;
+      }

@@ -1,0 +1,34 @@
+<h2>Librarian profile</h2>
+
+<div class="row">
+    <div class="column">
+        <a class="button" routerLink="/add-book" routerLinkActive="active-link">Add Book</a>
+        <div> <img src="assets\images\addbook2.png" /></div>
+    </div>
+    <div class="column">
+        <h2>Search book </h2>
+        <div class="input-wrap">
+            <input type="search" [(ngModel)]=searchBooks placeholder="Search Book by: Title || Author  || Subject">
+            <img class="s-img" src="assets\images\search.jfif" />
+
+        </div>
+        <div *ngIf="(books | filter: searchBooks) as books">
+            <div *ngFor="let book of books" class="book">
+                <table class="center">
+                    <tr>
+                        <td><a [routerLink]="['/view-detail', book.id]">{{book.title}}</a></td>&nbsp;&nbsp;
+                        <td> <a [routerLink]="['/view-detail', book.id]">{{book.author}}</a></td>&nbsp;&nbsp;
+                        <td> <a [routerLink]="['/view-detail', book.id]">{{book.subject}}</a></td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <a class="button" routerLink="/manage-book" routerLinkActive="active-link">Manage Book</a>
+        <div> <img src="assets\images\mangebook.png" /></div>
+
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<h2>Book Details</h2>
+
+<table id="bookstable">
+    <tr class="title">
+        <td>Title</td>
+        <td>Author</td>
+        <td>Details</td>
+    </tr>
+    <tr *ngFor="let book of books">
+
+        <td>{{book.title}}</td>
+        <td>{{book.author}}</td>
+        <td><button class="btn btn-success" [routerLink]="['/view-detail', book.id]">View Detail</button></td>
+
+    </tr>
+
+</table>
